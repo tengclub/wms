@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>AUI快速完成布局</title>
+    <link rel="stylesheet" type="text/css" href="auicss/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="auicss/css/aui-slide.css" />
+    <link rel="stylesheet" type="text/css" href="alifont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+</head>
+<body>
+<header class="aui-bar aui-bar-nav">
+    <div class="aui-title">Tengclub</div>
+</header>
+<div id="aui-slide">
+    <div class="aui-slide-wrap" >
+        <div class="aui-slide-node bg-dark">
+            <img src="auicss/image/l1.png" />
+        </div>
+        <div class="aui-slide-node bg-dark">
+            <img src="auicss/image/l2.png" />
+        </div>
+        <div class="aui-slide-node bg-dark">
+            <img src="auicss/image/l3.png" />
+        </div>
+    </div>
+    <div class="aui-slide-page-wrap"><!--分页容器--></div>
+</div>
+
+<script type="text/javascript" src="auicss/script/aui-slide.js"></script>
+<script type="text/javascript">
+    var slide = new auiSlide({
+        container:document.getElementById("aui-slide"),
+        // "width":300,
+        "height":260,
+        "speed":300,
+        "pageShow":true,
+        "pageStyle":'line',
+        "loop":true,
+        'dotPosition':'center'
+    })
+
+   
+</script>
+
+   
+     <section class="aui-grid aui-margin-b-15 >
+        <div class="aui-row">
+            <div class="aui-col-xs-4">
+                <div class="aui-badge">88</div>
+                <i class="aui-iconfont iconfont icon-kucun-xianxing"></i>
+                <div class="aui-grid-label">库房</div>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="order.html" class="b-color-75">
+                <i class="aui-iconfont aui-icon-forward"></i>
+                <div class="aui-grid-label">出库</div>
+                </a>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="login.html" class="b-color-75">
+                <i class="aui-iconfont aui-icon-back"></i>
+                <div class="aui-grid-label">入库</div>
+                </a>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="orderCheck.html" class="b-color-75">
+                <i class="aui-iconfont aui-icon-calendar"></i>
+                <div class="aui-grid-label">计划</div>
+                </a>
+            </div>
+            <!--
+            <div class="aui-col-xs-4">
+                <div class="aui-badge"></div>
+                <i class="aui-iconfont aui-icon-date"></i>
+                <div class="aui-grid-label">日期</div>
+            </div>
+            <div class="aui-col-xs-4">
+                <div class="aui-dot"></div>
+                 
+                 <i class="aui-iconfont iconfont icon-danju-xianxing"></i>
+                <div class="aui-grid-label">购物车</div>
+                
+            </div>
+        -->
+        </div>
+    </section>
+   
+    <footer class="aui-bar aui-bar-tab z-index-100" id="footer">
+        <div class="aui-bar-tab-item aui-active" tapmode>
+            <i class="aui-iconfont aui-icon-home"></i>
+            <div class="aui-bar-tab-label">首页</div>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+            <a href="list.html" class="b-color-75">
+            <i class="aui-iconfont iconfont icon-danju-xianxing"></i>
+            <div class="aui-bar-tab-label">入库订单</div>
+            </a>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+            <a href="list2.html" class="b-color-75">
+            <div class="aui-badge">99</div>
+            <i class="aui-iconfont iconfont icon-danju"></i>
+            <div class="aui-bar-tab-label">出库订单</div>
+            </a>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+           
+                <div class="aui-dot"></div>
+                 <a href="item.html" class="b-color-75">
+                <i class="aui-iconfont aui-icon-my"></i>
+                <div class="aui-bar-tab-label">我的</div>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+

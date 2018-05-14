@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>AUI快速完成布局</title>
+    <link rel="stylesheet" type="text/css" href="auicss/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="alifont/iconfont.css" />
+</head>
+<body>
+	<header class="aui-bar aui-bar-nav">
+		<a class="aui-pull-left" href="index.html">
+        <span class="aui-iconfont aui-icon-left"></span>
+	    </a>
+	    <div class="aui-title">订单</div>
+	</header>
+<div class="aui-content aui-margin-b-15">
+    <ul class="aui-list aui-form-list">
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    货物
+                </div>
+                <div class="aui-list-item-input">
+                    <select>
+                        <option>货物1</option>
+                        <option>货物2</option>
+                        <option>货物3</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    数量
+                </div>
+                <div class="aui-list-item-input">
+                    <input type="number" placeholder="数量">
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    备注
+                </div>
+                <div class="aui-list-item-input">
+                    <textarea placeholder="备注"></textarea>
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+                <div class="aui-list-item-inner aui-list-item-center aui-list-item-btn">
+                   
+                    <div class="aui-btn aui-btn-info aui-margin-r-5">同意</div>
+                    <div class="aui-btn aui-btn-danger aui-margin-l-5">不同意</div>
+                   
+                </div>
+            </li>
+
+    </ul>
+    </div>
+    <footer class="aui-bar aui-bar-tab z-index-100" id="footer">
+        <div class="aui-bar-tab-item aui-active" tapmode>
+            <i class="aui-iconfont aui-icon-home"></i>
+            <div class="aui-bar-tab-label">首页</div>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+          
+            <i class="aui-iconfont iconfont icon-danju-xianxing"></i>
+            <div class="aui-bar-tab-label">入库订单</div>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+            <div class="aui-badge">99</div>
+
+
+            <i class="aui-iconfont iconfont icon-danju"></i>
+            <div class="aui-bar-tab-label">出库订单</div>
+        </div>
+        <div class="aui-bar-tab-item" tapmode>
+            <div class="aui-dot"></div>
+            <i class="aui-iconfont aui-icon-my"></i>
+            <div class="aui-bar-tab-label">我的</div>
+        </div>
+    </footer>
+</body>
+</html>

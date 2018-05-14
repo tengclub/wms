@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>Home</title>
+
+    <!-- Icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <header class="app-header navbar">
+        <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">☰</button>
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav navbar-nav hidden-md-down">
+            <li class="nav-item">
+                <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
+            </li>
+
+            <li class="nav-item px-1">
+                <a class="nav-link" href="#">主页</a>
+            </li>
+           
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item hidden-md-down">
+                <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">5</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <span class="hidden-md-down">admin</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+
+                    <div class="dropdown-header text-center">
+                        <strong>用户</strong>
+                    </div>
+
+                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> 修改密码</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> 个人信息</a>
+                    <div class="divider"></div>
+                    <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> 退出</a>
+                </div>
+            </li>
+            <li class="nav-item hidden-md-down">
+               
+            </li>
+
+        </ul>
+    </header>
+
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="icon-speedometer"></i>菜单 <span class="badge badge-info">BUG管理</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="widgets.html"><i class="icon-puzzle"></i>贴心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html"><i class="icon-pie-chart"></i> 善印</a>
+                    </li>
+                   
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <main class="main">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">首页</li>
+                <li class="breadcrumb-item active">看板</li>
+            </ol>
+
+
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+   
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    BUG提交
+                                </div>
+                                 <form action="" method="post" enctype="multipart/form-data" class="form-horizontal ">
+                                <div class="card-block">
+
+                                   
+
+                                        <div class="form-group row">
+                                            <label class="col-md-1 form-control-label" for="text-input">模块</label>
+                                            <div class="col-md-9">
+                                               <select id="ccyear" class="form-control">
+                                                                <option>2014</option>
+                                                                <option>2015</option>
+                                                                <option>2016</option>
+                                                                <option>2017</option>
+                                                                <option>2018</option>
+                                                                <option>2019</option>
+                                                                <option>2020</option>
+                                                                <option>2021</option>
+                                                                <option>2022</option>
+                                                                <option>2023</option>
+                                                                <option>2024</option>
+                                                                <option>2025</option>
+                                                            </select>
+                                            </div>
+                                        </div>
+                                       <div class="form-group row">
+                                            <label class="col-md-1 form-control-label" for="text-input">问题</label>
+                                            <div class="col-md-9">
+                                               <textarea id="textarea-input" class="form-control" name="textarea-input" rows="9" placeholder="问题.."></textarea>
+                                                
+                                            </div>
+                                        </div>
+                                   
+
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-sm btn-primary" type="submit">
+                                    <i class="fa fa-dot-circle-o"></i>
+                                    保存
+                                    </button>
+                                    <button class="btn btn-sm btn-danger" type="reset">
+                                    <i class="fa fa-ban"></i>
+                                    重置
+                                    </button>
+                                </div>
+                                 </form>
+
+                            </div>
+                        </div>
+                        <!--/.col-->
+                    </div>
+                    <!--/.row-->
+                </div>
+
+
+            </div>
+            <!-- /.conainer-fluid -->
+        </main>
+
+       
+
+
+    </div>
+
+    <footer class="app-footer">
+        Copyright &copy; 2017.Epod All rights reserved.
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="js/jquery.js"></script>
+    <script src="js/tether.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/pace.js"></script>
+
+
+
+    <!-- GenesisUI main scripts -->
+
+    <script src="js/app.js"></script>
+
+
+
+
+
+    <!-- Plugins and scripts required by this views -->
+
+    <!-- Custom scripts required by this view -->
+   
+
+</body>
+
+</html>
